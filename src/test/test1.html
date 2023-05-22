@@ -4,6 +4,12 @@
     <title>MyU_Test</title>
     <link href="./testPage.css" rel="stylesheet">
     <link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script>
+        function nextPage(){
+            document.getElementById("contentFrame").setAttribute("src", "text2.html")
+        }
+    </script>
 </head>
 <body>
     <div class="background">
@@ -23,8 +29,8 @@
                     <img src="/image/test1.png" class="photo"></img>
                 </div>
                 <div class="body_right">
-                    <button class="answer">마루</button>
-                    <button class="answer">메로</button>
+                    <button class="answer" onclick="location.href='test2.html'">마루</button>
+                    <button class="answer" onclick="location.href='test2.html'">메로</button>
                 </div>
             </div>
             <div class="body_footer">
