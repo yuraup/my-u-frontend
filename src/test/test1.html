@@ -5,11 +5,17 @@
     <link href="./testPage.css" rel="stylesheet">
     <link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <script>
+    <script
+    src="../login/login.html" defer
+    >
         function nextPage(){
             document.getElementById("contentFrame").setAttribute("src", "text2.html")
         }
+        function logout(){
+            document.getElementById("contentFrame").setAttribute("../login", "login.html")
+        }
     </script>
+
 </head>
 <body>
     <div class="background">
@@ -18,7 +24,7 @@
             <div class="longLine"></div>
             <div class="midLine"></div>
             <div class="shortLine"></div>
-            <div class="mypage">마이페이지</div>
+            <button class="logout" onclick="location.href='../login/login.html'">로그아웃</button>
         </div>
         <div class="body">
             <div class="body_header">
