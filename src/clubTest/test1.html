@@ -5,7 +5,7 @@
     <link href="../css/testPage.css" rel="stylesheet">
     <link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <script
+    <!-- <script
     src="../login/login.html" defer
     >
         function nextPage(){
@@ -14,7 +14,9 @@
         function logout(){
             document.getElementById("contentFrame").setAttribute("../login", "login.html")
         }
-    </script>
+    </script> -->
+    <script src="./score.js"></script>
+
 
 </head>
 <body>
@@ -35,11 +37,11 @@
                     <img src="/image/clubTest/test1.png" class="photo"></img>
                 </div>
                 <div class="body_right">
-                    <button class="answer" onclick="location.href='test2.html'">
+                    <button class="answer" onclick="calc(J,2)">
                         아~ 이땐 이랬고 저땐 이랬구나? <br/>
                         올해가 잘 정리되어 있어서 뿌듯하다!
                     </button>
-                    <button class="answer" onclick="location.href='test2.html'">
+                    <button class="answer"  onclick="calc(P,2)">
                         1~2월에는 이랬구나! <br/>
                         3월부터는... 어... 쓰다 말았네? 
                     </button>

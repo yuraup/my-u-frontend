@@ -5,8 +5,8 @@
     <link href="../css/testPage.css" rel="stylesheet">
     <link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <script
-    src="../login/login.html" defer
+    <!-- <script src="../login/login.html" defer
+    
     >
         function nextPage(){
             document.getElementById("contentFrame").setAttribute("src", "text2.html")
@@ -14,7 +14,9 @@
         function logout(){
             document.getElementById("contentFrame").setAttribute("../login", "login.html")
         }
-    </script>
+    </script> -->
+    <script src="./score.js"></script>
+
 
 </head>
 <body>
@@ -35,8 +37,10 @@
                     <img src="/image/campusLifeTest/test1.png" class="photo"></img>
                 </div>
                 <div class="body_right">
-                    <button class="answer" onclick="location.href='test2.html'">마루</button>
-                    <button class="answer" onclick="location.href='test2.html'">메로</button>
+                    <!-- <button class="answer" onclick="location.href='test2.html'">마루</button>
+                    <button class="answer" onclick="location.href='test2.html'">메로</button> -->
+                    <button class="answer" onclick="calc(true,2)">마루</button>
+                    <button class="answer" onclick="calc(false,2)">메로</button>
                 </div>
             </div>
             <div class="body_footer">
