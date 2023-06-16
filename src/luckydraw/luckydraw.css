@@ -50,8 +50,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  left: 36%;
-  top: 605px;
+  margin-top: 350px;
   pointer-events: none;
 }
 

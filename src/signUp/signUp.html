@@ -9,13 +9,13 @@
     <title>MyU_signUp</title>
     <script>
       function join() {
-        if (!id.value) return alert('아이디를 입력하세요');
-        if (!password.value) return alert('비밀번호를 입력하세요');
-        if (!checkPassword.value) return alert('비밀번호를 확인하세요');
+        if (!id.value) return alert("아이디를 입력하세요");
+        if (!password.value) return alert("비밀번호를 입력하세요");
+        if (!checkPassword.value) return alert("비밀번호를 확인하세요");
         if (password.value !== checkPassword.value) {
-          return alert('비밀번호가 일치하지 않습니다.');
+          return alert("비밀번호가 일치하지 않습니다.");
         }
-        if (!nickName.value) return alert('닉네임을 입력하세요');
+        if (!nickName.value) return alert("닉네임을 입력하세요");
 
         const req = {
           id: id.value,
@@ -24,24 +24,24 @@
           check: checkPassword.value,
         };
 
-        fetch('http://localhost:3000/user/join', {
-          method: 'POST',
+        fetch("http://localhost:3000/user/join", {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json', // 내가 보내는 데이터의 타입 명시 (json)
+            "Content-Type": "application/json", // 내가 보내는 데이터의 타입 명시 (json)
           },
           body: JSON.stringify(req),
         })
           .then((res) => res.json())
           .then((res) => {
             if (res.success) {
-              location.href = '../login/login.html';
-              alert('회원가입을 완료했습니다.');
+              location.href = "../login/login.html";
+              alert("회원가입을 완료했습니다.");
             } else {
               alert(res.msg);
             }
           })
           .catch((err) => {
-            console.error('회원가입 중 에러 발생');
+            console.error("회원가입 중 에러 발생");
           });
       }
     </script>
@@ -83,7 +83,9 @@
           />
         </div>
       </div>
-      <button class="loginBtn" onclick="join()">회원가입</button>
+      <button class="loginBtn" onclick="join()" style="decoration: none">
+        회원가입
+      </button>
       <footer data-include="../smallFooter/smallFooter.html"></footer>
     </div>
   </body>

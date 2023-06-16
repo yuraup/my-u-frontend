@@ -10,55 +10,67 @@
 
     <script>
       function login() {
-        if (!id.value) return alert('아이디를 입력하세요');
-        if (!password.value) return alert('비밀번호를 입력하세요');
+        if (!id.value) return alert("아이디를 입력하세요");
+        if (!password.value) return alert("비밀번호를 입력하세요");
         const req = {
           id: id.value,
           password: password.value,
         };
-        fetch('http://localhost:3000/user/login', {
-          method: 'POST',
+        fetch("http://localhost:3000/user/login", {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify(req),
         })
           .then((response) => response.json())
           .then((res) => {
-            if (res.success) location.href = '../main/main.html';
+            if (res.success) location.href = "../../index.html";
             else alert(res.msg);
           })
           .catch((err) => {
-            console.error('로그인 중 에러 발생');
+            console.error("로그인 중 에러 발생");
           });
       }
     </script>
   </head>
   <body>
-    <header data-include="../header/header.html"></header>
-    <div class="containter">
-      <div class="inputContainer">
-        <div class="titleBox">
-          <p class="idTitle">아이디</p>
-          <p class="pwTitle">비밀번호</p>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <header data-include="/src/header/header.html"></header>
+      <div class="containter">
+        <div class="inputContainer">
+          <div class="titleBox">
+            <p class="idTitle">아이디</p>
+            <p class="pwTitle">비밀번호</p>
+          </div>
+          <div class="inputBox">
+            <input
+              id="id"
+              class="idInput"
+              type="text"
+              placeholder="아이디를 입력하세요"
+            />
+            <input
+              id="password"
+              class="pwInput"
+              type="password"
+              placeholder="비밀번호를 입력하세요"
+            />
+          </div>
         </div>
-        <div class="inputBox">
-          <input
-            id="id"
-            class="idInput"
-            type="text"
-            placeholder="아이디를 입력하세요"
-          />
-          <input
-            id="password"
-            class="pwInput"
-            type="password"
-            placeholder="비밀번호를 입력하세요"
-          />
-        </div>
+        <button class="loginBtn" onclick="login()">로그인</button>
+        <a href="/src/signUp/signUp.html">
+          <p style="font-size: 20px">회원가입</p>
+        </a>
       </div>
-      <button class="loginBtn" onclick="login()">로그인</button>
+      <footer data-include="../smallFooter/smallFooter.html"></footer>
     </div>
-    <footer data-include="../smallFooter/smallFooter.html"></footer>
   </body>
 </html>

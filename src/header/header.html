@@ -6,18 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="header.css" />
     <title>header</title>
-    <script>
-      // let isLogin = document.querySelectorAll("button");
-
-      // li.forEach(function (item) {
-      //   // if(item.classList.contains("red")){
-      //   //   item.innerHTML="red"
-      //   // }
-      //   item.classList.contains("")
-      //     ? (item.innerHTML = "red")
-      //     : console.log("?");
-      // });
-    </script>
+    <script></script>
     <style>
       @font-face {
         font-family: "Shrikhand";
@@ -25,9 +14,9 @@
       }
 
       .header {
-        width: 100%;
+        width: 1000px;
         height: 13%;
-        margin: 8% 0 8% -5%;
+        margin: 6% auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -40,13 +29,15 @@
         font-size: 80px;
         line-height: 117px;
         color: #191b41;
+        margin-left: 20px;
       }
 
       .link {
         text-decoration: none;
+        margin-left: -190px;
       }
       .longLine {
-        width: 31%;
+        width: 100px;
         margin-left: 15%;
         border: 4px solid #94addf;
       }
@@ -55,7 +46,7 @@
         border: 4px solid #94addf;
       }
       .shortLine {
-        width: 3.8;
+        width: 3;
         border: 4px solid #94addf;
       }
 
@@ -111,25 +102,24 @@
   <body>
     <div class="headerContainer">
       <div class="header">
-        <a href="../main/main.html" class="link">
+        <a href="../../index.html" class="link">
           <div class="logo">My-U</div>
         </a>
         <div class="longLine"></div>
         <div class="midLine"></div>
         <div class="shortLine"></div>
         <div class="dropdown">
-          <!-- 드롭다운 박스 아직 구현못했습니다. 수정하면 다시 올리겠습니다. -->
           <button
             class="dropbtn"
             value="${isLogin ? '마이페이지' : '로그인'}"
             isLogin="true"
+            onclick="location.href='./src/login/login.html'"
           >
             로그인
           </button>
           <div class="dropdown-content">
-            <a href="../myPage/myPage.html">마이페이지</a>
-            <a href="../luckydraw/luckydraw.html">운세뽑기</a>
-            <a href="#">로그아웃</a>
+            <a href="/src/luckydraw/luckydraw.html">운세뽑기</a>
+            <!-- <a href="#">로그아웃</a> -->
           </div>
         </div>
         <!-- <div class="mypage">마이페이지</div> -->
