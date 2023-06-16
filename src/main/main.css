@@ -6,6 +6,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	margin-left: 100px;
 }
 
 .logo {
@@ -92,8 +93,6 @@
 	display: flex;
 }
 
-.leftBox {}
-
 .rightBox {
 	margin-left: 300px;
 }
@@ -154,7 +153,7 @@
 	height: 67px;
 	left: 345px;
 	top: 1689px;
-	margin-left: 245px;
+	margin-left: 200px;
 	font-family: 'Inknut Antiqua';
 	font-style: normal;
 	font-weight: 700;

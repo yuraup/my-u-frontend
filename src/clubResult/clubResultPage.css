@@ -85,10 +85,10 @@
 	margin-top: 3%;
 }
 
-.body_header {
-	width: 180px;
+.body_header2 {
+	width: 250px;
 	margin-top: 50px;
-	margin-left: 230px;
+	margin-left: 180px;
 	height: 26px;
 	left: 336px;
 	top: 334px;
@@ -106,7 +106,7 @@
 }
 
 .resultName {
-	margin-left: 200px;
+	margin-left: 210px;
 	width: 250px;
 	height: 88px;
 	left: 324px;
@@ -218,6 +218,10 @@
 	font-weight: 400;
 	margin-left: 110px;
 
+}
+
+.body_footer:hover {
+	color: orchid;
 }
 
 .shareImg {

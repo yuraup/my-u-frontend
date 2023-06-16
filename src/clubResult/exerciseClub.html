@@ -6,6 +6,26 @@
 	<link href="clubResultPage.css" rel="stylesheet">
 	<link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<script>
+		sharePage = () => {
+			const shareObject = {
+				title: '결과 공유',
+				text: '',
+				url: window.location.href,
+			};
+			if (navigator.share) {
+				navigator.share(sahreObject)
+					.then(() => {
+						alert('공유 링크가 복사되었습니다')
+					})
+					.catch((error) => {
+						alert('에러가 발생했습니다')
+					})
+			} else {
+				alert('페이지 공유를 지원하지 않습니다')
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -18,14 +38,14 @@
 			<div class="mypage">로그아웃</div>
 		</div>
 		<div class="body">
-			<div class="body_header"> 당신과 찰떡궁합 동아리는...?<br></div>
-			<div class="resultName">운동 동아리</div>
+			<div class="body_header2"> 당신과 찰떡궁합 동아리는...?<br></div>
+			<div class="resultName2" onclick="sharePage()">운동 동아리</div>
 			<div class="body_body">
 				<div class="body_left">
 					<img src="exerciseImg.png" class="photo"></img>
 					<div class="body_footer">
 						<img src="share.png" class="shareImg"></img>
-						<p>공유하기</p>
+						<button onclick="sharePage()">공유하기</button>
 					</div>
 				</div>
 				<div class="body_right">
