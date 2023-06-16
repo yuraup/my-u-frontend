@@ -1,4 +1,4 @@
-let storage = sessionStorage;
+let storage = localStorage;
 let score = 0
 
 const calc = (answer, nextPage) => {
@@ -11,7 +11,6 @@ const calc = (answer, nextPage) => {
     else { //오답일 때
         score = score;
     }
-    // alert(score);
     storage.setItem('score',score);
 }
 
@@ -24,16 +23,21 @@ const goTo = (answer) => {
     else { //오답일 때
         score = score;
     }
-    // alert(score);
     storage.setItem('score',score);
     
     switch(score){
-        case 1,2 : location.href = `result${nextPage}.html`; break;
-        case 3,4 : location.href = `result${nextPage}.html`; break;
-        case 5,6 : location.href = `result${nextPage}.html`; break;
-        case 7,8,9 : location.href = `result${nextPage}.html`; break;
-        case 0,10 : location.href = `result${nextPage}.html`; break;
+        case 1 : location.href = `../result/freshman.html`; break;
+        case 2 : location.href = `../result/freshman.html`; break;
+        case 3 : location.href = `../result/returnStudent.html`; break;
+        case 4 : location.href = `../result/returnStudent.html`; break;
+        case 5 : location.href = `../result/oldStudent.html`; break;
+        case 6 : location.href = `../result/oldStudent.html`; break;
+        case 7 : location.href = `../result/fossil.html`; break;
+        case 8 : location.href = `../result/fossil.html`; break;
+        case 9 : location.href = `../result/fossil.html`; break;
+        case 0 : location.href = `../result/professor.html`; break;
+        case 10 : location.href = `../result/professor.html`; break;
     }
-    
+    storage.removeItem('score');
 }
 
