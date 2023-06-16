@@ -25,12 +25,8 @@
         })
           .then((response) => response.json())
           .then((res) => {
-            if (res.success) {
-              // 성공 시
-              location.href = '/';
-            } else {
-              alert(res.msg);
-            }
+            if (res.success) location.href = '../main/main.html';
+            else alert(res.msg);
           })
           .catch((err) => {
             console.error('로그인 중 에러 발생');
