@@ -17,11 +17,11 @@
         })
           .then((response) => response.json())
           .then((res) => {
-            // 결과 값을 선택한 요소에 할당
             var scoreElement = document.querySelector(".score");
-            scoreElement.textContent = res.luck.score;
+            scoreElement.innerHTML = `<div style='  font-size: 40px; color: purple; margin-top: 10px;   font-weight: 800;'>${res.score}</div>`;
+            console.log("야", scoreElement);
             var msgElement = document.querySelector(".text");
-            msgElement.textContent = res.luck.msg;
+            msgElement.innerHTML = `<div style=''>${res.msg}</div>`;
           });
       }
     </script>
