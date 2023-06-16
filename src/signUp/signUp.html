@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./signUp.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../include.js" defer></script>
+    <title>MyU_signUp</title>
+    <script>
+      function join() {
+        console.log();
+        if (!id.value) return alert("아이디를 입력하세요");
+        if (!password.value) return alert("비밀번호를 입력하세요");
+        if (!checkPassword.value) return alert("비밀번호를 확인하세요");
+        if (password.value !== checkPassword.value) {
+          return alert("비밀번호가 일치하지 않습니다.");
+        }
+        if (!nickName.value) return alert("닉네임을 입력하세요");
+
+        const req = {
+          id: id.value,
+          nickName: nickName.value,
+          password: password.value,
+          check: checkPassword.value,
+        };
+
+        fetch("http://localhost:3000/user/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json", // 내가 보내는 데이터의 타입 명시 (json)
+          },
+          body: JSON.stringify(req),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            if (res.success) {
+              location.href = "/login";
+              alert("회원가입을 완료했습니다.");
+            } else {
+              alert(res.msg);
+            }
+          })
+          .catch((err) => {
+            console.error("회원가입 중 에러 발생");
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <header data-include="../header/header.html"></header>
+    <div class="containter">
+      <div class="inputContainer">
+        <div class="titleBox">
+          <p class="idTitle">이메일</p>
+          <p class="middleTitle">비밀번호</p>
+          <p class="middleTitle">비밀번호 확인</p>
+          <p class="pwTitle">닉네임</p>
+        </div>
+        <div class="inputBox">
+          <input
+            id="id"
+            class="idInput"
+            type="text"
+            placeholder="아이디를 입력하세요"
+          />
+          <input
+            id="password"
+            class="pwInput"
+            type="password"
+            placeholder="비밀번호를 입력하세요"
+          />
+          <input
+            class="pwInput"
+            type="password"
+            id="checkPassword"
+            placeholder="비밀번호를 한 번 더 입력하세요."
+          />
+          <input
+            id="nickName"
+            class="pwInput"
+            type="text"
+            placeholder="닉네임을 입력하세요. "
+          />
+        </div>
+      </div>
+      <button class="loginBtn" onclick="{join}">회원가입</button>
+      <footer data-include="../smallFooter/smallFooter.html"></footer>
+    </div>
+  </body>
+</html>
