@@ -1,52 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>MainPage</title>
+    <script src="./include.js" defer></script>
+    <style>
+      .logo {
+        left: 0%;
+        right: 74.01%;
+        top: 0%;
+        bottom: 0%;
+        margin-left: 184px;
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="main.css">
-	<title>MainPage</title>
-</head>
+        font-family: "Shrikhand";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 117px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
 
-<body>
-	<section>
-		<div class="header">
-			<div class="logo">My-U</div>
-			<div class="longLine"></div>
-			<div class="midLine"></div>
-			<div class="shortLine"></div>
-			<div class="loginButton">로그인</div>
-		</div>
+        /* main */
 
-	</section>
-	<section>
-		<img class="maruImg" src="marumari.png" alt="">
-	</section>
+        color: #191b41;
+      }
 
-	<div class="container">
-		<div class="formy">명지인을 위한 심리 테스트</div>
-		<div class="itemBox">
-			<div class="leftBox">
-				<img class="univImg" src="univImg.png" alt="">
-				<div class="univType" onclick="location.href='../campusLifeTest/test1.html'">대학생 유형 테스트 <img
-						class="arrow" src="arrow.png" alt=""></div>
-			</div>
-			<div class="rightBox">
-				<img class="rectangleImg" src="clubImg.png" alt="">
-				<div class="ready" onclick="location.href='../clubTest/test1.html'">동아리 테스트<img class="arrow"
-						src="arrow.png" alt=""></div>
+      .longLine {
+        width: 31%;
+        margin-left: 15%;
+        border: 4px solid #94addf;
+      }
 
-			</div>
-		</div>
+      .midLine {
+        width: 8%;
+        border: 4px solid #94addf;
+      }
 
-	</div>
+      .shortLine {
+        width: 3.8;
+        border: 4px solid #94addf;
+      }
 
-	<footer>
-		<h1>my-u</h1>
-		<p class="about">my universe</p>
-		<p class="about">심리테스트를 통해 나에 대해 알아가고 찾아감으로써 나의 우주를 만들어 나가자!</p>
-	</footer>
-</body>
+      .loginButton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid;
+        cursor: pointer;
+        border-radius: 100px;
+      }
 
+      .maruImg {
+        align-content: space-between;
+        width: 1360px;
+        height: 416.07px;
+        left: 100px;
+        top: 403px;
+        border-radius: 33px;
+        text-align: center;
+        margin-left: 240px;
+      }
+
+      .mainContainer {
+        /* background: #FFFFFF; */
+        border: 2px solid #523595;
+        box-sizing: border-box;
+        border-radius: 71px;
+        width: 1360px;
+        height: 830px;
+        padding: 10px;
+        margin-left: 240px;
+        justify-content: space-between;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .itemBox {
+        margin-bottom: 40px;
+
+        display: flex;
+      }
+
+      .rightBox {
+        margin-left: 300px;
+      }
+
+      .formy {
+        position: flex;
+        width: 380px;
+        height: 77px;
+        left: 209px;
+        top: 1028px;
+        margin-left: 109px;
+        margin-top: 30px;
+        font-family: "Inknut Antiqua";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 77px;
+
+        color: #000000;
+      }
+
+      .univImg {
+        display: flex;
+        width: 400px;
+        height: 520px;
+        border-radius: 10px;
+        margin-left: 128px;
+      }
+
+      .univType {
+        width: 280px;
+        height: 67px;
+        margin-left: 245px;
+        font-family: "Inknut Antiqua";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 67px;
+        color: #3a1d47;
+      }
+
+      .rectangleImg {
+        width: 400px;
+        height: 520px;
+
+        margin-right: 128px;
+        margin-top: 0%;
+        background: #d9d9d9;
+        border-radius: 10px;
+      }
+
+      .ready {
+        position: flex;
+        width: 280px;
+        height: 67px;
+        left: 345px;
+        top: 1689px;
+        margin-left: 200px;
+        font-family: "Inknut Antiqua";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 67px;
+        color: #3a1d47;
+      }
+
+      .image-wrapper {
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        width: 1200px;
+        height: 830px;
+        left: 100px;
+        top: 995px;
+        background: #ffffff;
+        border: 2px solid #523595;
+        border-radius: 71px;
+      }
+
+      h1 {
+        margin-left: 63px;
+        margin-top: 60px;
+        font-family: "Shrikhand";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 95px;
+        /* identical to box height */
+
+        display: flex;
+        text-transform: capitalize;
+
+        /* navy */
+
+        color: #0a1640;
+      }
+
+      .about {
+        margin-left: 63px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 28px;
+        display: flex;
+
+        color: #0a1640;
+      }
+      .arrow {
+        margin-left: 5px;
+      }
+
+      footer {
+        position: flex;
+        width: 1840px;
+        height: 248px;
+        left: 0px;
+        top: 2052px;
+        background: rgba(233, 218, 251, 0.6);
+      }
+
+      section {
+        margin-bottom: 175px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <img class="maruImg" src="../image/main/myUPoster.png" alt="" />
+    </section>
+
+    <div class="mainContainer">
+      <div class="formy">명지인을 위한 심리 테스트</div>
+      <div class="itemBox">
+        <div class="leftBox">
+          <img class="univImg" src="../image/main/univImg.png" alt="" />
+          <div
+            class="univType"
+            onclick="location.href='../src/campusLifeTest/test1.html'"
+          >
+            대학생 유형 테스트
+            <img class="arrow" src="../image/main/arrow.png" alt="" />
+          </div>
+        </div>
+        <div class="rightBox">
+          <img class="rectangleImg" src="../image/main/clubImg.png" alt="" />
+          <div
+            class="ready"
+            onclick="location.href='../src/clubTest/test1.html'"
+          >
+            동아리 테스트<img
+              class="arrow"
+              src="../image/main/arrow.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h1>my-u</h1>
+      <p class="about">my universe</p>
+      <p class="about">
+        심리테스트를 통해 나에 대해 알아가고 찾아감으로써 나의 우주를 만들어
+        나가자!
+      </p>
+    </footer>
+  </body>
 </html>
