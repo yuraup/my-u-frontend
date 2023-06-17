@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "B612";
+  src: url("../font/B612.ttf");
+}
+
+
 .container {
   width: 100%;
   height: auto;
@@ -6,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .box {
@@ -21,6 +28,7 @@
   border-radius: 10px;
 }
 .title {
+  font-family: 'B612';
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -38,6 +46,7 @@
   background: #f8f0ff;
   border-radius: 20px;
   border: none;
+  font-family: 'B612';
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;

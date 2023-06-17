@@ -6,6 +6,22 @@
 	<link href="resultPage.css" rel="stylesheet">
 	<link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<script type="text/javascript">
+
+		function clip() {
+
+			var url = '';
+			var textarea = document.createElement("textarea");
+			document.body.appendChild(textarea);
+			url = window.document.location.href;
+			textarea.value = url;
+			textarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textarea);
+			alert("공유 링크가 복사되었습니다.")
+		}
+
+	</script>
 </head>
 
 <body>
@@ -22,10 +38,11 @@
 			<div class="resultName">모든 게 새로운 <br>새내기</div>
 			<div class="body_body">
 				<div class="body_left">
-					<img src="freshman.png" class="photo"></img>
+					<img href="#" onclick="clip(); return false;" src="freshman.png" class="photo"></img>
 					<div class="body_footer">
-						<img src="share.png" class="shareImg"></img>
+						<img class="toshare" src="share.png" class="shareImg"></img>
 						<p>공유하기</p>
+						<p>사진을 클릭하면 결과 링크를 공유할 수 있습니다</p>
 					</div>
 				</div>
 				<div class="body_right">
@@ -37,10 +54,12 @@
 						하지만 지금이라도 늦지 않았어요! 당신이 우리 학교를 다니며 하고 싶은 것들, 가고 싶은 곳들, 모두 다 할 수 있습니다!
 						주변 선배에게 조언을 구해보고, 즐기고 싶었던 여러 행사에도 참여해 보세요! 당신의 젊음은 당신의 것이니까요!</div>
 
-					<div class="result_link">명지대학교 관련 소식은 <a
-							href="https://www.instagram.com/myongji_univ/">@Myongi_univ</a>에서 <br>
-						명지대학교 인문캠퍼스 관련 소식은 <a href="https://www.instagram.com/mju_move/">@Mju_move</a>에서<br>
-						명지대학교 자연캠퍼스 관련 소식은<a href="https://www.instagram.com/mju_dot/"> @Mju_dot</a>에서</div>
+					<div class="result_link">명지대학교 관련 소식은 <a href="https://www.instagram.com/myongji_univ/"
+							class="insta">@Myongi_univ</a>에서 <br>
+						명지대학교 인문캠퍼스 관련 소식은 <a href="https://www.instagram.com/mju_move/"
+							class="insta">@Mju_move</a>에서<br>
+						명지대학교 자연캠퍼스 관련 소식은<a href="https://www.instagram.com/mju_dot/" class="insta"> @Mju_dot</a>에서
+					</div>
 				</div>
 			</div>
 			<div class="footer">

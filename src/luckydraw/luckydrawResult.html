@@ -18,13 +18,19 @@
           .then((response) => response.json())
           .then((res) => {
             var scoreElement = document.querySelector(".score");
-            scoreElement.innerHTML = `<div style='  font-size: 40px; color: purple; margin-top: 10px;   font-weight: 800;'>${res.score}</div>`;
+            scoreElement.innerHTML = `<div style='font-family: 'B612'; font-size: 40px; color: purple; margin-top: 10px;   font-weight: 800;'>${res.score}</div>`;
             console.log("야", scoreElement);
             var msgElement = document.querySelector(".text");
             msgElement.innerHTML = `<div style=''>${res.msg}</div>`;
           });
       }
     </script>
+    <style>
+      @font-face {
+      font-family: "B612";
+      src: url("../font/B612.ttf");
+    }
+    </style>
   </head>
   <body>
     <header data-include="../header/header.html"></header>
@@ -48,3 +54,4 @@
     </script>
   </body>
 </html>
+

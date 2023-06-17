@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link href="./main.css" rel="stylesheet"  />
     <title>MainPage</title>
     <script src="./include.js" defer></script>
     <style>
       @font-face {
         font-family: "Shrikhand";
-        src: url("./font/Shrikhand.ttf");
+        src: url("../font/Shrikhand.ttf");
+      }
+      @font-face {
+        font-family: "InknutAntiqua";
+        src: url("../font/InknutAntiqua.ttf");
+      }
+      @font-face {
+        font-family: "OpenSans";
+        src: url("../font/OpenSans.ttf");
       }
       .logo {
         left: 0%;
@@ -106,7 +114,7 @@
         top: 1028px;
         margin-left: 109px;
         margin-top: 30px;
-        font-family: "Inknut Antiqua";
+        font-family: "InknutAntiqua";
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
@@ -127,7 +135,7 @@
         width: 280px;
         height: 67px;
         margin-left: 245px;
-        font-family: "Inknut Antiqua";
+        font-family: "InknutAntiqua";
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
@@ -152,7 +160,7 @@
         left: 345px;
         top: 1689px;
         margin-left: 200px;
-        font-family: "Inknut Antiqua";
+        font-family: "InknutAntiqua";
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
@@ -191,9 +199,9 @@
         color: #0a1640;
       }
 
-      .about {
+      #about {
         margin-left: 63px;
-        font-family: "Open Sans";
+        font-family: "OpenSans";
         font-style: normal;
         font-weight: 800;
         font-size: 16px;
@@ -257,8 +265,8 @@
 
     <footer>
       <h1>my-u</h1>
-      <p class="about">my universe</p>
-      <p class="about">
+      <p id="about">my universe</p>
+      <p id="about">
         심리테스트를 통해 나에 대해 알아가고 찾아감으로써 나의 우주를 만들어
         나가자!
       </p>

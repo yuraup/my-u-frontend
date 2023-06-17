@@ -6,6 +6,22 @@
 	<link href="resultPage.css" rel="stylesheet">
 	<link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<script type="text/javascript">
+
+		function clip() {
+
+			var url = '';
+			var textarea = document.createElement("textarea");
+			document.body.appendChild(textarea);
+			url = window.document.location.href;
+			textarea.value = url;
+			textarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textarea);
+			alert("공유 링크가 복사되었습니다.")
+		}
+
+	</script>
 </head>
 
 <body>
@@ -19,17 +35,18 @@
 		</div>
 		<div class="body">
 			<div class="body_header"> 대학교에서 당신은...<br></div>
-			<div class="resultName"> 혹시 ... <br>교수님 ?!?!</div>
+			<div class="resultName"> 혹시 ... 교수님 ?!?!</div>
 			<div class="body_body">
 				<div class="body_left">
-					<img src="professor.png" class="photo"></img>
+					<img href="#" onclick="clip(); return false;" src="professor.png" class="photo"></img>
 					<div class="body_footer">
-						<img src="share.png" class="shareImg"></img>
+						<img class="toshare" src="share.png" class="shareImg"></img>
 						<p>공유하기</p>
+						<p>사진을 클릭하면 결과 링크를 공유할 수 있습니다</p>
 					</div>
 				</div>
-				<div class="body_right">
-					<div class="result_name">#입학생과 교수님 사이 그 어딘가...<br></div>
+				<div class="body_right2">
+					<div class="result_name">#입학생과_ 교수님_ 사이 그 어딘가...<br></div>
 
 					<div class="result_explain">
 						당신은... 혹시 교수님이십니까?<br>

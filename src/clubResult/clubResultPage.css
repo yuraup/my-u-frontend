@@ -67,7 +67,7 @@
 	border-radius: 24px;
 
 	/* font */
-	font-family: 'OpenSans';
+	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -111,7 +111,6 @@
 	height: 88px;
 	left: 324px;
 	top: 383px;
-
 	font-family: 'Shrikhand';
 	font-style: italic;
 	font-weight: 400;
@@ -220,13 +219,8 @@
 
 }
 
-/* .body_footer:hover {
+.body_footer:hover {
 	color: orchid;
-} */
-
-#share{
-	color: orchid;
-	background-color: #0A2640;
 }
 
 .shareImg {
@@ -236,6 +230,28 @@
 	margin-bottom: 10px;
 	margin-left: 20px;
 	width: 30px;
+
+}
+
+.toshare {
+	display: flex;
+	flex-direction: column;
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-weight: 400;
+	margin-left: 160px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	width: 10%;
+	height: 50%;
+
+}
+
+.toshare:hover {
+	color: orchid;
 }
 
 

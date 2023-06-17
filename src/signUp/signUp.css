@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "B612";
+  src: url("../font/B612.ttf");
+}
+
 .containter {
   display: flex;
   flex-direction: column;

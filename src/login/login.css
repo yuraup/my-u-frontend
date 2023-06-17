@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "B612";
+  src: url("../font/B612.ttf");
+}
+
+
 .containter {
   display: flex;
   flex-direction: column;
@@ -86,4 +92,11 @@
 
 .loginBtn:hover {
   background-color: rgba(234, 216, 249, 1);
+}
+
+#signup {
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px
 }

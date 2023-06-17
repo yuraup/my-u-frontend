@@ -1,3 +1,16 @@
+@font-face {
+	font-family: "Shrikhand";
+	src: url("../font/Shrikhand.ttf");
+  }
+@font-face {
+	font-family: "InknutAntiqua";
+	src: url("../font/InknutAntiqua.ttf");
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../font/OpenSans.ttf");
+}
+  
 .header {
 	width: 73%;
 	height: 13%;
@@ -105,7 +118,7 @@
 	top: 1028px;
 	margin-left: 109px;
 	margin-top: 30px;
-	font-family: 'Inknut Antiqua';
+	font-family: 'InknutAntiqua';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 30px;
@@ -128,7 +141,7 @@
 	width: 280px;
 	height: 67px;
 	margin-left: 245px;
-	font-family: 'Inknut Antiqua';
+	font-family: 'InknutAntiqua';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
@@ -154,7 +167,7 @@
 	left: 345px;
 	top: 1689px;
 	margin-left: 200px;
-	font-family: 'Inknut Antiqua';
+	font-family: 'InknutAntiqua';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
