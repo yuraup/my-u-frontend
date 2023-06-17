@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "SF Pro Display";
+	font-family: "SFProDisplay";
 	src: url("../font/SFProDisplay.ttf");
 }
 @font-face {
@@ -7,8 +7,12 @@
 	src: url("../font/Shrikhand.ttf");
 }
 @font-face {
-	font-family: "Open Sans";
+	font-family: "OpenSans";
 	src: url("../font/OpenSans.ttf");
+}
+@font-face {
+	font-family: "B612";
+	src: url("../font/B612.ttf");
 }
 * {
   margin: 5px;
@@ -79,7 +83,7 @@
   border-radius: 24px;
 
   /* font */
-  font-family: "Open Sans";
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -192,6 +196,9 @@
 .result_name {
   text-align: center;
   margin-top: 40px;
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 0.1em;
@@ -202,6 +209,7 @@
   margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
+  font-family: 'B612';
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 0.1em;
@@ -221,7 +229,7 @@
 .body_footer {
   display: flex;
   flex-direction: column;
-  font-family: "SF Pro Display";
+  font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
   margin-left: 110px;
@@ -284,7 +292,7 @@
 .toshare {
   display: flex;
   flex-direction: column;
-  font-family: "SF Pro Display";
+  font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
   margin-left: 138px;
