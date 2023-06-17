@@ -1,22 +1,3 @@
-/*sharePage = () => {
-	const shareObject = {
-		title: '결과 공유',
-		text: '',
-		url: window.location.href,
-	};
-	if (navigator.share) {
-		navigator.share(shareObject)
-			.then(() => {
-				alert('공유 링크가 복사되었습니다')
-			})
-			.catch((error) => {
-				alert('에러가 발생했습니다')
-			})
-	} else {
-		alert('페이지 공유를 지원하지 않습니다')
-	}
-}*/
-
 function copyLink() {
 	// 복사할 링크의 주소를 가져옵니다.
 	var link = window.document.location.href; // 여기에 공유할 링크를 입력하세요.

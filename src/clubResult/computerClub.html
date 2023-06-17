@@ -7,36 +7,45 @@
 	<link rel="stylesheet" href="<https://pro.fontawesome.com/releases/v5.10.0/css/all.css>"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-		<script type="text/javascript">
+	<!-- <script src="/shareLink.js"></script> -->
 
-			function clip() {
-	
-				var url = '';
-				var textarea = document.createElement("textarea");
-				document.body.appendChild(textarea);
-				url = window.document.location.href;
-				textarea.value = url;
-				textarea.select();
-				document.execCommand("copy");
-				document.body.removeChild(textarea);
-				alert("공유 링크가 복사되었습니다.")
-			}
-	
-		</script>
+	<script type="text/javascript">
+
+		function clip() {
+
+			var url = '';
+			var textarea = document.createElement("textarea");
+			document.body.appendChild(textarea);
+			url = window.document.location.href;
+			textarea.value = url;
+			textarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textarea);
+			alert("공유 링크가 복사되었습니다.")
+		}
+
+		function logout () {
+			location.href='../../index.html'
+			alert("로그아웃되었습니다.")
+		}
+
+
+	</script>
+
 </head>
 
 <body>
 	<div class="background">
 		<div class="header">
-			<div class="logo">My-U</div>
-			<div class="longLine"></div>
-			<div class="midLine"></div>
-			<div class="shortLine"></div>
-			<div class="mypage">로그아웃</div>
+			<div class="logo" onclick="location.href='../../index.html'">My-U</div>
+            <div class="longLine"></div>
+            <div class="midLine"></div>
+            <div class="shortLine"></div>
+			<div class="mypage" onclick="logout()">로그아웃</div>
 		</div>
 		<div class="body">
 			<div class="body_header2"> 당신과 찰떡궁합 동아리는...?<br></div>
-			<div class="resultName">IT 동아리</div>
+			<div style='word-spacing:20px' class="resultName"> IT 동아리</div>
 			<div class="body_body">
 				<div class="body_left">
 					<img href="#" onclick="clip(); return false;" src="computerImg.png" class="photo"></img>
@@ -62,10 +71,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer">
-				<div class="goTo"></div>
-			</div>
+		</div>
+		<div class="footer">
+			<div class="goTo"></div>
 		</div>
 </body>
-
 </html>
