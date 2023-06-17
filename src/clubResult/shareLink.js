@@ -19,7 +19,7 @@
 
 function copyLink() {
 	// 복사할 링크의 주소를 가져옵니다.
-	var link = "https://www.example.com"; // 여기에 공유할 링크를 입력하세요.
+	var link = window.document.location.href; // 여기에 공유할 링크를 입력하세요.
 
 	// 임시 textarea 엘리먼트를 생성하고 링크를 설정합니다.
 	var textarea = document.createElement('textarea');

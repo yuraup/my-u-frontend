@@ -67,7 +67,7 @@
 	border-radius: 24px;
 
 	/* font */
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -220,8 +220,13 @@
 
 }
 
-.body_footer:hover {
+/* .body_footer:hover {
 	color: orchid;
+} */
+
+#share{
+	color: orchid;
+	background-color: #0A2640;
 }
 
 .shareImg {
