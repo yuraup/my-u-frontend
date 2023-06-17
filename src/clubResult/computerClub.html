@@ -24,6 +24,12 @@
 			alert("공유 링크가 복사되었습니다.")
 		}
 
+		function logout () {
+			location.href='../../index.html'
+			alert("로그아웃되었습니다.")
+		}
+
+
 	</script>
 
 </head>
@@ -31,11 +37,11 @@
 <body>
 	<div class="background">
 		<div class="header">
-			<div class="logo">My-U</div>
-			<div class="longLine"></div>
-			<div class="midLine"></div>
-			<div class="shortLine"></div>
-			<div class="mypage">로그아웃</div>
+			<div class="logo" onclick="location.href='../../index.html'">My-U</div>
+            <div class="longLine"></div>
+            <div class="midLine"></div>
+            <div class="shortLine"></div>
+			<div class="mypage" onclick="logout()">로그아웃</div>
 		</div>
 		<div class="body">
 			<div class="body_header2"> 당신과 찰떡궁합 동아리는...?<br></div>
@@ -65,10 +71,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer">
-				<div class="goTo"></div>
-			</div>
+		</div>
+		<div class="footer">
+			<div class="goTo"></div>
 		</div>
 </body>
-
 </html>
